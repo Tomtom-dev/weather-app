@@ -9,15 +9,9 @@ export default function Search() {
             setCitySearch(event.target.value)    
     }
 
-    function onSubmit(event){
-        event.preventDefault();
-        console.log(citySearch);
-    }
-
     return (
         <div>
             <input type="text" value={citySearch} onChange={handleOnChange} placeholder="search a city"/>
-            <button className="searchButton" onClick={onSubmit}>Submit</button>
             <Result city={citySearch}></Result>
         </div>
     )

@@ -1,4 +1,4 @@
-class CityService {
+class HttpServices {
     url ="https://api.openweathermap.org/data/2.5/weather?q=";
     apiKey = "f44e947afc6c0878ed4463a841db0599";
 
@@ -14,4 +14,4 @@ class CityService {
     }
 }
 
-export const cityService = Object.freeze(new CityService())
+export const httpService = Object.freeze(new HttpServices())
