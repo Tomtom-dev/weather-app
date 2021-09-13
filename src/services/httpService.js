@@ -1,16 +1,11 @@
 class HttpServices {
     url ="https://api.openweathermap.org/data/2.5/weather?q=";
-    apiKey = "f44e947afc6c0878ed4463a841db0599";
+    apiKey = "b3df62d5a072ecd6af46779d55443a1c";
 
 
-    getCity(path){
-        fetch(`${this.url}${path}&appid=${this.apiKey}`)
+    async getCity(path){
+         return fetch(`${this.url}${path}&appid=${this.apiKey}`)
         .then(res => res.json())
-        .then(data => {
-            console.log(data)
-        }).catch(err => {
-            console.error('Error: ', err);
-        });
     }
 }
 

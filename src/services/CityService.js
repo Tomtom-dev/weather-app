@@ -3,8 +3,8 @@ import {httpService} from './httpService';
 class CityService {
 
     async findCity(city){
-        return  await httpService.get(city)
+        return  httpService.getCity(city)
     }
 }
 
-export const cityService = Object.freeze(new CityService)
+export const cityService = Object.freeze(new CityService())
