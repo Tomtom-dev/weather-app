@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Result } from './result';
 
 export default function Search() {
 
@@ -13,12 +14,11 @@ export default function Search() {
         console.log(citySearch);
     }
 
-    
-
     return (
         <div>
             <input type="text" value={citySearch} onChange={handleOnChange} placeholder="search a city"/>
             <button className="searchButton" onClick={onSubmit}>Submit</button>
+            <Result city={citySearch}></Result>
         </div>
     )
 }

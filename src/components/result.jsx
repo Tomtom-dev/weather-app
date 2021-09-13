@@ -3,15 +3,15 @@ import { cityService } from '../services/httpService';
 
 
 
-export  const Result = () => {
+export  const Result = (props) => {
 
-   cityService.getCity("lille")
+   cityService.getCity(props.city)
 
     
 
     return (
         <div>
-            mourtaerde
+            rendu de la recherche
         </div>
     )
 }
