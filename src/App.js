@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import Search from './components/search';
+import { Result } from './components/result';
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Search></Search>
+      <Result></Result>
     </div>
   );
 }
